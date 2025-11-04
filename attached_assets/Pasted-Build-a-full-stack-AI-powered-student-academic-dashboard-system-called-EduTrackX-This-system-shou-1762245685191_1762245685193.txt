@@ -1,0 +1,165 @@
+Build a full-stack AI-powered student academic dashboard system called “EduTrackX”.
+This system should help students track academic performance, predict results, plan study schedules, and receive AI recommendations.
+
+🎯 Core Requirements
+
+Build a modern web app that allows:
+
+✅ Student authentication (login/signup)
+✅ Add subjects & marks (manual + OCR marks upload)
+✅ Track assignments, deadlines, exam dates
+✅ Attendance tracking
+✅ Study time logging (Pomodoro timer)
+✅ Dashboard with analytics:
+
+GPA/CGPA calculation
+
+Subject-wise performance charts
+
+Attendance graph
+
+Productivity stats
+
+Deadlines & progress bars
+
+✅ Notifications for deadlines (email or in-app)
+✅ Export report card PDF
+
+🤖 AI Features
+
+Integrate the following AI modules:
+
+AI Feature	Description
+📈 Grade / CGPA Prediction	ML model based on past marks
+🔍 Weak Subject Detection	Identify low-scoring areas
+📚 Study Recommendations	Suggest chapters, resources, schedule
+🧠 AI Study Mentor Bot	Explains concepts, answers academic questions
+📊 AI Performance Insights	“You improved in Math, review DBMS”
+📝 OCR Marks Reader	Upload screenshot/PDF → auto-extract marks
+📅 AI Timetable Planner	Daily/weekly recommended study schedule
+
+ML Model Specs
+
+Train on synthetic sample dataset if real data not provided
+
+Algorithms: Random Forest / XGBoost / Linear Regression
+
+Export model via joblib and load in backend
+
+🎨 UI & UX
+
+Modern clean UI with:
+
+Sidebar navigation
+
+Dashboard cards
+
+Line & Bar charts (Chart.js / Recharts)
+
+Dark mode
+
+Mobile responsive
+
+Progress bars, badges, streak counters
+
+Pages to include:
+
+Page	Purpose
+Home Dashboard	KPIs + Charts
+Subjects & Marks	CRUD + graphs
+Assignments	Deadlines + calendar
+Attendance	Mark & view charts
+Study Planner	Pomodoro + schedule
+AI Assistant	Chat interface
+Profile	Student settings
+🏗️ Tech Stack
+
+Use this stack:
+
+Layer	Tech
+Frontend	React / Next.js + Tailwind
+Backend	Python Flask / FastAPI
+Database	MongoDB Atlas or Firebase
+Charts	Chart.js / Recharts
+OCR	Tesseract.js / Python Tesseract
+AI	HuggingFace / Local model (No paid API)
+Auth	JWT or Firebase Auth
+
+Also support:
+
+PWA mode for mobile
+
+Cloud deployment script
+
+Environment variable template
+
+📂 Project Structure
+/frontend
+/backend
+  /ml
+    model.pkl
+    train_model.ipynb
+/database or firebase config
+/docs (SRS + diagrams + report)
+
+📦 Deliverables to Auto-Generate
+
+❗ Output all the below:
+
+Deliverable	Format
+✅ Working full web app	Full code
+✅ ML model	train + inference files
+✅ OCR module	integrated
+✅ Database schema	JSON + models
+✅ REST API routes	documented
+✅ UI Screens	components included
+✅ System Architecture Diagram	PNG/SVG
+✅ ER Diagram	PNG/SVG
+✅ UML diagrams	Use case + flow
+✅ SRS Document	PDF
+✅ IEEE Project Report	DOCX
+✅ PPT for project viva	PPTX
+✅ README.md	with setup steps
+✅ Demo script	text
+💡 System Behavior
+
+Store all academic data in DB
+
+Train or load model automatically
+
+Show alerts if student is at risk
+
+Reward XP, streaks, badges
+
+Allow PDF export of analytics
+
+🛠️ Features Priority
+
+Auth + Dashboard
+
+Marks + Assignments + Attendance
+
+Charts + GPA + Planner
+
+ML + OCR + AI Mentor
+
+Export, notifications, gamification
+
+✅ Final Task
+
+Generate the COMPLETE production-ready codebase + docs + diagrams + ML pipeline + UI + deployment scripts automatically.
+Use clean architecture, reusable components, comments, and best practices.
+
+📣 Important Notes
+
+No paid APIs
+
+Include seeds / demo data
+
+Optimize for students
+
+Make UI clean & modern
+
+Ensure it runs locally & deployable online
+
+🚀 Build the full project now.
