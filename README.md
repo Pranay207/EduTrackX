@@ -245,10 +245,7 @@ The grade prediction model uses:
 - **Performance**: R² Score: 0.64, MSE: 28.03
 - **Training Data**: 1000 synthetic student records
 
-## Deployment
-
-### Replit Deployment
-This project is configured for easy deployment on Replit. Simply click the "Publish" button.
+## Deploymment
 
 ### Manual Deployment
 
