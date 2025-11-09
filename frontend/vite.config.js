@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -9,23 +8,16 @@ export default defineConfig({
     port: 5000,
     strictPort: true,
     allowedHosts: [
-      "04083dbd-d36d-4f6d-a31b-60a2c71f49ea-00-3nxqn6ftxkbnl.kirk.replit.dev",
       "localhost",
-      "127.0.0.1"
+      "127.0.0.1",
+      "192.168.0.4"
     ],
     proxy: {
-      // Proxy API requests to Flask backend
       '/api': {
-        target: 'http://localhost:5001', // Flask backend port
+        target: 'http://localhost:5001', // backend URL
         changeOrigin: true,
-        secure: false,
+        secure: false
       }
     }
-  },
-  preview: {
-    port: 5000,
-  },
-  build: {
-    outDir: 'dist',
   }
 })
